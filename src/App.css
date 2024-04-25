@@ -1,38 +1,227 @@
+:root {
+  --primary: #BB06DF;
+  --secondary: #6a027f;
+  --purple-gradient: linear-gradient(#BB06DF, #6a027f);
+  --black: rgb(28, 28, 28);
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /* background: var(--black); */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.section {
+  max-width: 100%;
+  height: fit-content;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.section .heading {
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
   color: white;
+  margin: 20px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.section .subheading {
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  margin: 20px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.section .text {
+  max-width: 60%;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  margin: 20px 0;
+}
+
+.text-left {
+  text-align: left;
+}
+
+
+
+
+
+
+/* MEDIA QUERYS */
+
+/* PARA PANTALLAS DE TABLETS */
+
+@media (max-width: 1120px) {
+
+  /* CAMBIOS EN EL HERO */
+
+  .hero .hero-right {
+    max-width: 40% !important;
+    min-width: 40% !important;
+    height: fit-content !important;
+    margin-left: 20px !important;
   }
-  to {
-    transform: rotate(360deg);
+
+  /* CAMBIOS EN LAS PREGUNTAS FRECUENTES */
+
+  /* .question {
+    min-width: 110vh !important;
+    max-width: 110vh !important;
+  }
+
+  .answer {
+    max-width: 100vh !important;
+  } */
+
+  /* CAMBIOS EN EL FOOTER */
+
+  .footer .text {
+    min-width: 100% !important;
+  }
+
+  .footer-c.f-right .contact-box {
+    width: 200px !important;
+    height: 200px !important;
+    margin: 20px !important;
+  }
+
+  .footer-c.f-right .contact-box div {
+    width: 200px !important;
+    height:  200px !important;
+  }
+
+  .footer-c.f-right .contact-box p {
+    font-size: 13.5px !important;
+  }
+}
+
+
+
+
+
+/* PARA PANTALLAS DE MOVILES */
+
+@media (max-width: 768px) {
+
+  /* CAMBIOS EN EL HERO */
+
+  .hero .hero-top {
+    flex-direction: column-reverse !important;
+  }
+
+  .hero .hero-left {
+    min-width: 90% !important;
+    max-width: 90% !important;
+    align-items: center !important;
+  }
+
+  .hero .heading {
+    text-align: center !important;
+    font-size: 50px;
+  }
+
+  .hero .subheading {
+    text-align: center !important;
+    font-size: 38px;
+  }
+
+  .hero .text {
+    text-align: center !important;
+  }
+
+  .hero .hero-right {
+    max-width: 70% !important;
+    min-width: 70% !important;
+    height: fit-content !important;
+    margin: 10px !important;
+  }
+
+  .hero .img-container {
+    overflow: visible !important;
+    height: auto !important;
+  }
+
+  .hero img {
+    /* border: 3px solid var(--black) !important; */
+    box-shadow: 2px 2px 25px 12px var(--black) !important;
+    border-radius: 0 !important;
+  }
+
+  .hero .info-container {
+    max-width: 60% !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    box-shadow: 2px 2px 25px 12px var(--black) !important;
+  }
+
+  .hero .info-block {
+    width: 80% !important;
+  }
+
+  .hero .info-block:nth-child(2) {
+    border-left: none !important;
+    border-right: none !important;
+    border-top: 3px solid var(--primary) !important;
+    border-bottom: 3px solid var(--primary) !important;
+  }
+
+  /* CAMBIOS EN LAS PREGUNTAS FRECUENTES */
+
+  /* .question {
+    min-width: 50vh !important;
+    max-width: 50vh !important;
+  }
+
+  .answer {
+    max-width: 45vh !important;
+  } */
+
+  /* CAMBIOS EN LA SECCION DE CONTACTO */
+
+  .contact form {
+    flex-direction: column !important;
+  }
+
+  /* CAMBIOS EN EL FOOTER */
+
+  .footer {
+    margin-top: -260px !important;
+    flex-direction: column !important;
+  }
+
+  .footer .footer-c {
+    width: 80% !important;
+  }
+
+  .footer .footer-c.f-left {
+    padding-left: 0 !important;
+  }
+
+  .footer .text {
+    min-width: 100% !important;
+  }
+
+  .footer-c.f-right .contact-box {
+    width: 180px !important;
+    height: 180px !important;
+    margin: 20px !important;
+  }
+
+  .footer-c.f-right .contact-box div {
+    width: 180px !important;
+    height: 180px !important;
+  }
+
+  .footer-c.f-right .contact-box p {
+    font-size: 13.5px !important;
   }
 }

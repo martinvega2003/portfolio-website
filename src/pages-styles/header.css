@@ -1,0 +1,43 @@
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    min-width: 100%;
+    max-width: 100%;
+    height: fit-content;
+    background-color: var(--black);
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .links-container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header .link {
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    transition: all 0.2s linear;
+}
+
+.header .link:hover {
+    background: var(--purple-gradient);
+    color: white;
+}
+
+.header .link:nth-child(5) {
+    background: var(--purple-gradient);
+    color: white;
+}
