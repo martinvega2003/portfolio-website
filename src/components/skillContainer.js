@@ -1,7 +1,7 @@
 import React from "react";
 import '../components-styles/skillContainer.css'
 
-const SkillContainer = ({ icon, name, experience, familiarity }) => {
+const SkillContainer = ({ icon, name, experience }) => {
     return (
         <div className="container skill">
             {icon}
@@ -10,14 +10,9 @@ const SkillContainer = ({ icon, name, experience, familiarity }) => {
             </h2>
             <div className="data-container">
                 <div className="exp-container">
-                    <span>experiencia: </span>
-                    <span className={experience >= 1 ? 'green circle' : 'yellow circle'}>{experience}</span>
-                    <span>anos</span>
-                </div>
-                <div className="exp-container">
-                    <span>familiaridad: </span>
-                    <span className={familiarity >= 70 ? 'green circle' : 'yellow circle'}>{familiarity}%</span>
-                    <span>porciento</span>
+                    <p className="exp-text">
+                        "{experience}"
+                    </p>
                 </div>
             </div>
         </div>

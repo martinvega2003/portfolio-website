@@ -20,7 +20,7 @@ const Faqs = () => {
     }
 
     return (
-        <section class="section faqs" id="section-three">
+        <section class="section faqs" id="preguntas">
 
             <h2 className="heading">
                 Preguntas frecuentes

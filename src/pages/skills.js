@@ -9,7 +9,7 @@ import SkillContainer from "../components/skillContainer";
 
 const Skills = () => {
     return (
-        <section className="section skills">
+        <section className="section skills" id="habilidades">
             <div className="skills-container">
                 {
                     skillsInfo.map(skill => {

@@ -4,7 +4,7 @@ import '../components-styles/projectContainer.css'
 // IMPORTS DE MOTION: 
 import { motion, useAnimationControls } from "framer-motion";
 
-const ProjectContainer = ({ img, name, stack, desc, link, linkToCode }) => {
+const ProjectContainer = ({ numero, name, stack, desc, linkToCode, linkToDeploy }) => {
 
     //Frame-motion:
     const animationControls = useAnimationControls()
@@ -19,8 +19,10 @@ const ProjectContainer = ({ img, name, stack, desc, link, linkToCode }) => {
     }
 
     return (
-        <motion.a href={link} className="project-container" whileHover={() => handleHover()} onHoverEnd={() => handleHoverEnd()}>
-            <img src={img} />
+        <motion.div className="project-container" whileHover={() => handleHover()} onHoverEnd={() => handleHoverEnd()}>
+            <h4>
+                Proyecto #{numero}
+            </h4>
             <motion.div className="descripcion" initial={{bottom: "-100%"}} variants={{show: {bottom: 0}, hide: {bottom: "-100%"}}} animate={animationControls}>
                 <h2>
                     {name}
@@ -40,11 +42,16 @@ const ProjectContainer = ({ img, name, stack, desc, link, linkToCode }) => {
                     {desc}
                 </p>
 
-                <a className="link-to-code" href={linkToCode}>
-                    ver codigo
-                </a>
+                <div className="links-cont">
+                    <a href={linkToCode}>
+                        ver codigo
+                    </a>
+                    <a href={linkToDeploy}>
+                        ver proyecto
+                    </a>
+                </div>
             </motion.div>
-        </motion.a>
+        </motion.div>
     )
 }
 

@@ -1,9 +1,9 @@
 export const personalInfo = {
     nombre: "Martin Vega",
-    edad: 20,
+    edad: 21,
     nacionalidad: "Paraguaya",
     Experiencia: "Proyectos Personales",
-    area: "Front-end y manejo de bases de datos"
+    area: "desarrollo web y manejo de bases de datos"
 }
 
 export const educacionInfo = {

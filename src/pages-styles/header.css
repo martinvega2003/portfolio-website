@@ -20,6 +20,7 @@
 }
 
 .header .link {
+    font-family: 'Open Sans', sans-serif;
     width: fit-content;
     height: fit-content;
     color: white;

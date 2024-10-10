@@ -12,24 +12,28 @@ import ProjectContainer from "../components/projectContainer";
 
 const Projects = () => {
     return (
-        <section className="section projects">
+        <section className="section projects" id="proyectos">
             <h2 className="heading">
-                Projects
+                Proyectos
             </h2>
             <p className="text"> 
-                Here you can see all the projects I made till today. I included the most important and big ones that required from all of my skills
+                Aca pueden ver los mejores proyectos en los que trabaje hasta ahora. De a poco fui mejorando mis habilidades, 
+                asi que el proyecto numero 3 es el mejor ejemplo que tengo, un ecommerce fullstack con django y React, aunque 
+                tambien tengo otro proyecto fullstack con express en el backend. 
+                (El deployment de los proyectos fullstack muchas veces genera errores al hacer el fetching de la base de datos,
+                 asi que si esto ocurre, es por eso).
             </p>
             <div className="projects-container">
                 {
                     ProjectsInfo.map(project => {
                         return (
                             <ProjectContainer 
+                                numero={project.numero}
                                 name={project.name}
-                                img={img}
                                 stack={project.techStack}
                                 desc={project.desc}
-                                link={project.githubLink}
                                 linkToCode={project.linkToCode}
+                                linkToDeploy={project.linkToDeploy}
                             />
                         )
                     })

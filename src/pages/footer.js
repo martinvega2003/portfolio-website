@@ -22,7 +22,7 @@ const Footer = () => {
     }
 
     return (
-        <section className="section footer">
+        <section className="section footer" id="footer">
             <div className="footer-c f-left">
                 <h2 className="heading">
                     Mantengamonos al tanto

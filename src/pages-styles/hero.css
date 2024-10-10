@@ -4,16 +4,19 @@
 }
 
 .hero .heading {
+    font-family: 'Montserrat', sans-serif;
     text-align: left;
     color: var(--black);
 }
 
 .hero .subheading {
+    font-family: 'Roboto', sans-serif;
     text-align: left;
     color: beige;
 }
 
 .hero .text {
+    font-family: 'Open Sans', sans-serif;
     min-width: 80%;
     max-width: 80%;
     text-align: left;
@@ -24,20 +27,14 @@
     max-width: 100%;
     height: fit-content;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.hero .hero-left {
-    max-width: 50%;
-    min-width: 50%;
-    /* flex: 1; */
-    height: fit-content;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-evenly;
+.hero .hero-top h4 {
+    max-width: 60%;
+    text-align: justify;
 }
 
 .hero .hero-right {

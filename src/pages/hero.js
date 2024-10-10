@@ -15,7 +15,6 @@ const Hero = () => {
         <section className="section hero">
             <div className="hero-top">
                 {/* IZQUIERDA */}
-                <div className="hero-left">
                     <h1 className="heading">
                         Desarrollador web junior
                     </h1>
@@ -26,17 +25,16 @@ const Hero = () => {
                         Soy un desarrollador web junior que esta cursando la carrera de ingenieria informatica.
                         Me encuentro en el tercer curso de la carrera con un promedio superior a 4 de 5. He creado 
                         esta pagina para demostrar mis habilidades como desarrollador web. Espero que les puedan servir 
-                        a alguien. Si quieres saber mass, abajo encontraras cosas como mis projectos, informacion personal,
+                        a alguien. Si quieres saber mas, abajo encontraras cosas como mis proyectos, informacion personal,
                         habilidades, etc.
                     </h4>
-                </div>
 
-                {/* DERECHA */}
+                {/* DERECHA 
                 <div className="hero-right">
                     <div className="img-container">
                         <img src={img} />
                     </div>
-                </div>
+                </div> */}
             </div>
             <div className="hero-bottom">
                 <div className="info-container">
